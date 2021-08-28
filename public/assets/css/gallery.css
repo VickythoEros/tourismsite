@@ -1,0 +1,257 @@
+.div-carou-gallery{
+  
+}
+
+/*****carrousel 3d automatique*****/
+
+*{box-sizing : border-box}
+
+img{max-width:100%}
+
+.contenu_carou_auto{
+
+margin:2rem auto;
+width:420px;
+height:279px;
+perspective:8000px;
+
+	
+	}
+		
+.caroussel-image{
+	
+animation:rotation 24s infinite alternate linear;	
+transform-style:preserve-3d;
+position:relative;	
+
+}
+
+.caroussel-image img{
+	
+position: absolute;
+top:0;
+left: 0;
+	
+	
+	}
+
+
+		
+.caroussel-image img{
+	
+filter:drop-shadow(0 12px 5px hsla(0,0%,0%,.4));
+width:400px;
+height:266px;
+left:10px;
+outline:1px solid transparent;
+backface-visibility:hidden
+	
+	}
+		
+.caroussel-image img:nth-child(1){
+	
+transform:translate3d(0,0,495px)
+		
+		}
+		
+.caroussel-image img:nth-child(2){
+	
+transform:rotateY(45deg) translateZ(495px)
+	
+		}
+		
+.caroussel-image img:nth-child(3){
+	
+	transform:rotateY(90deg) translateZ(495px)
+	
+	}
+	
+.caroussel-image img:nth-child(4){
+	
+	transform:rotateY(135deg) translateZ(495px)
+	
+	}
+	
+.caroussel-image img:nth-child(5){
+	
+	transform:rotateY(180deg) translateZ(495px)
+	
+	}
+	
+.caroussel-image img:nth-child(6){
+	
+	transform:rotateY(225deg) translateZ(495px)
+	
+	}
+	
+.caroussel-image img:nth-child(7){
+	
+	transform:rotateY(270deg) translateZ(495px)
+	
+	}
+	
+.caroussel-image img:nth-child(8){
+	
+	transform:rotateY(315deg) translateZ(495px)
+	
+	}
+
+	
+
+	
+@keyframes rotation{
+from{transform:rotatey(0)}
+to{transform:rotatey(1turn)}}
+	
+/*****fin carrousel 3d automatique*****/
+
+
+.controle{
+	
+  display:grid;
+  grid:2rem/repeat(2,1fr);
+  place-items:center
+    
+    }
+    
+  button{
+     
+  font-size: 2rem;
+  border: none;
+  cursor: pointer;
+  background: #eee
+  
+    } 
+    
+    
+  .contenu-carrousel {
+    
+  margin: 5rem auto;
+  width: 300px;
+  height: 200px;
+  position: relative;
+  perspective: 1000px
+    
+  }
+  
+  .carrousel {
+    
+   height: 100%;
+   width: 100%;
+   position: absolute;
+   transform-style: preserve-3d;
+   transition: transform 1s;
+    
+  }
+  
+  .carrousel div {
+    
+  backface-visibility: hidden;
+  box-shadow: 0 10px 10px rgba(0,0,0,.6);
+  position: absolute;
+  width: 300px;
+  height: 200px;
+  outline: 1px solid transparent
+    
+  }
+    
+  .carrousel div:nth-child(1) {
+    
+  transform: rotateY(0) translateZ(270px);
+  background:url(image.jpg) no-repeat center center/cover
+    
+  }
+    
+  .carrousel div:nth-child(2) {
+    
+  transform: rotateY(60deg) translateZ(270px);
+  background:url(image.jpg) no-repeat center center/cover
+  
+  }
+    
+  .carrousel div:nth-child(3) {
+    
+  transform: rotateY(120deg) translateZ(270px);
+  background:url(image.jpg) no-repeat center center/cover
+    
+  }
+    
+  .carrousel div:nth-child(4) {
+    
+  transform: rotateY(180deg) translateZ(270px);
+  background:url(image.jpg) no-repeat center center/cover
+    
+  }
+    
+  .carrousel div:nth-child(5) {
+    
+  transform: rotateY(240deg) translateZ(270px);
+  background:url(image.jpg) no-repeat center center/cover
+    
+  } 
+    
+  .carrousel div:nth-child(6) {
+    
+  transform: rotateY(300deg) translateZ(270px);
+  background:url(image.jpg) no-repeat center center/cover
+    
+  }	
+  
+
+  .gallery{
+
+  width: 100%;
+  margin: 2.5rem 0;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  }
+
+.gallery ul li{
+    position:relative;
+    float: left;
+    width:300px;
+    height:300px;padding:10px;
+    margin: 30px;
+    list-style:none;
+}
+/*permet de créer deux lignes*/
+.gallery ul li:nth-child(4n){clear:left;} 
+         
+.gallery ul li a{
+    display:block;
+    overflow:hidden;
+    width:300px;
+    height:300px;
+    margin-top:0px;
+    margin-left:10px;
+    border:0px solid rgba(0,0,0,0.7);
+    transition-property:width,height,margin,z-index,border;
+    transition-duration:0.4s;
+}
+
+.gallery ul li a:hover{
+    position:absolute;
+    width:400px;
+    height:400px;
+    margin-top:-56px;
+    margin-left:-56px;
+    z-index:100;
+    border:6px solid rgba(0,0,0,0.7);
+}
+         
+.gallery ul li a img{
+    position:absolute;
+    width:300px;
+    height:300px;
+    z-index:20;
+    transition-property:width,height,z-index;
+    transition-duration:0.4s;
+}
+         
+.gallery ul li a:hover img{
+    width:400px;
+    height:400px;
+    z-index:100;
+}

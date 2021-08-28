@@ -1,0 +1,43 @@
+.activity{
+    
+}
+
+
+.div-activity{
+    margin-top: 3em;
+    background: rgba(255, 255, 255, 0.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(43, 40, 40, 0.6);
+    border-radius: 10px;
+
+
+}
+.text-activity{
+    position: absolute;
+    display: inline-block;
+    margin-left: 50%;
+    margin-top: -20%;
+    width: 400px;
+
+}
+.text-activity button{
+    background-color: green;
+    color: white;
+    font-weight: bolder;
+    padding: 1em 2em;
+    outline: none;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.text-activity button:hover{
+    cursor: pointer;
+    background-color: rgb(3, 61, 3);
+
+}
+
+
+.activity-style{
+}

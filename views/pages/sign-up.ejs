@@ -1,0 +1,91 @@
+<%- include('../partials/head'); %>
+
+<style>
+.section_wrap{
+  background: url('assets/images/image2.jpg') no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+  .container-sign-up{
+      width: 40%;
+      margin: auto;
+      box-shadow: 10px 5px 5px #545858,10px -5px -5px #545858 ;
+    }
+		.sign-in form{
+      
+    }
+    .hdiv{
+      color: #060707 !important;
+	  font-weight: bolder;
+    }
+    .btn-style{
+      background-color: #007396 !important;
+      padding: 1.5em;
+	  font-weight: bold;
+    }
+
+</style>
+			
+		<!-- Highlights -->
+			<section class="wrapper section_wrap mt-n5">
+				
+				<div class="mx-auto text-center mb-5">
+					
+					<h4 class="h4 hdiv">Formulaire D'inscription</h4>
+				</div>
+
+				<div class="container-sign-up card p-5">
+					
+				<form>
+					<!-- 2 column grid layout with text inputs for the first and last names -->
+					<div class="row mb-4">
+					  <div class="col">
+						<div class="form-outline">
+						  <input type="text" id="form6Example1" class="form-control" />
+						  <label class="form-label" for="form6Example1">Nom</label>
+						</div>
+					  </div>
+					  <div class="col">
+						<div class="form-outline">
+						  <input type="text" id="form6Example2" class="form-control" />
+						  <label class="form-label" for="form6Example2">Prenom</label>
+						</div>
+					  </div>
+					</div>
+					
+					<div class="row mb-4">
+						<div class="col">
+						  <div class="form-outline">
+							<input type="date" id="form6Example1" class="form-control" />
+							
+						  </div>
+						</div>
+						<div class="col">
+						  <div class="form-outline">
+							<input type="text" id="form6Example2" class="form-control" />
+							<label class="form-label" for="form6Example2">Lieu de naissance</label>
+						  </div>
+						</div>
+					</div>
+
+					<div class="row mb-4">
+						<div class="col">
+						  <div class="form-outline">
+							<input type="email" id="form6Example1" class="form-control" />
+							<label class="form-label" for="form6Example1">Email</label>
+						  </div>
+						</div>
+						<div class="col">
+						  <div class="form-outline">
+							<input type="text" id="form6Example2" class="form-control input-style" />
+							<label class="form-label" for="form6Example2">Telephone</label>
+						  </div>
+						</div>
+					  </div>
+				
+				  
+					<!-- Submit button -->
+					<button type="submit" class="btn btn-primary btn-block mb-4 btn-style btn-my">S'inscrire</button>
+				  </form>
+			</section>
+<%- include('../partials/footer'); %>

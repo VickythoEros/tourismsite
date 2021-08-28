@@ -1,0 +1,67 @@
+<%- include('../partials/head'); %>
+<style>
+
+  .inner{
+      width: 45%;
+      margin: auto;
+      box-shadow: 10px 5px 5px #545858,10px -5px -5px #545858 ;
+    }
+		.sign-in form{
+      
+    }
+    .btn-style{
+      background-color: #007396 !important;
+      padding: 1em;
+    }
+</style>
+			
+		<!-- Highlights -->
+			<section class="wrapper section_wrap">
+				
+				<div class="mx-auto text-center mb-5 mt-n5">
+					
+					<h4 class="h4 mb-5">Nous contacter</h4>
+				</div>
+
+				<div class="inner" style="margin-top:-3em;">
+					<form>
+						<!-- 2 column grid layout with text inputs for the first and last names -->
+						<div class="row mb-4">
+						  <div class="col">
+							<div class="form-outline">
+							  <input type="text" id="form6Example1" class="form-control" />
+							  <label class="form-label" for="form6Example1">Nom</label>
+							</div>
+						  </div>
+						  <div class="col">
+							<div class="form-outline">
+							  <input type="text" id="form6Example2" class="form-control" />
+							  <label class="form-label" for="form6Example2">Prenom</label>
+							</div>
+						  </div>
+						</div>
+					
+					  
+		
+					  
+						<!-- Email input -->
+						<div class="form-outline mb-4">
+						  <input type="email" id="form6Example5" class="form-control" />
+						  <label class="form-label" for="form6Example5">Email</label>
+						</div>
+					  
+						<!-- Message input -->
+						<div class="form-outline mb-4">
+						  <textarea class="form-control" id="form6Example7" rows="4"></textarea>
+						  <label class="form-label" for="form6Example7">Ecrivez votre message</label>
+						</div>
+					  
+					
+					  
+						<!-- Submit button -->
+						<button type="submit" class="btn btn-primary btn-block mb-4 btn-style">Envoyer</button>
+					  </form>
+				</div>
+			</section>
+
+<%- include('../partials/footer'); %>

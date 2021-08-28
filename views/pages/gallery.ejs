@@ -1,0 +1,174 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<title>Tourism</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/header.css" />
+		<link rel="stylesheet" href="assets/css/gallery.css" />
+		<link rel="stylesheet" href="assets/css/aos.css" />
+	</head>
+	<body class="is-preload">
+
+		    <!-- Header -->
+		    <header class="site-header fixed-header">
+		      <div class="wrapper site-header__wrapper">
+		        <a href="#" class="brand">Tourism</a>
+		        <nav class="nav">
+		          <button class="nav__toggle" aria-expanded="false" type="button">
+		            menu
+		          </button>
+		          <ul class="nav__wrapper" >
+					  <li class="nav__item"><a class="nav_a" href="/">Accueil</a></li>
+					  <li class="nav__item"><a class="nav_a" href="activity">Nos activités</a></li>
+					  <li class="nav__item"><a class="nav_a" href="gallery">Galerie</a></li>
+					  <li class="nav__item"><a class="nav_a" href="whous">Qui sommes nous</a></li>
+					  <li class="nav__item"><a class="nav_a" href="contact">Contact</a></li>
+					 
+					  <li class="nav__item"><a class="nav_a" href="signin">Connexion</a></li>
+					   <li class="nav__item"><a class="nav_a" href="signup">Inscription</a></li>
+					</ul>
+		        </nav>
+		      </div>
+		    </header>
+		    <!-- Header  -->
+
+		<!-- Highlights -->
+			<section class="wrapper section_wrap">
+				
+				<div class="inner">
+					<header class="special">
+						<h2 style="color: green;">Notre Galerie</h2>
+						<p>In arcu accumsan arcu adipiscing accumsan orci ac. Felis id enim aliquet. Accumsan ac integer lobortis commodo ornare aliquet accumsan erat tempus amet porttitor.</p>
+					</header>
+					<div class="highlights">
+						<div class="contenu_carou_auto" data-aos="zoom-in">
+							<div class="caroussel-image">
+								
+								<img src="assets/images/site1.jpg" alt>
+								<img src="assets/images/site2.jpeg" alt>
+								<img src="assets/images/site3.jpg" alt>
+								<img src="assets/images/site4.jpeg" alt>
+								<img src="assets/images/site5.jpeg" alt>
+								<img src="assets/images/site6.jpg" alt>
+								<img src="assets/images/site1.jpg" alt>
+								<img src="assets/images/site3.jpg" alt>
+							</div>
+						</div>
+					</div>
+
+					<div class="div-carou-gallery">
+						<div class="div-test"data-aos="zoom-in">
+							<hr>
+						</div>
+						<header class="special"data-aos="zoom-in">
+							<h2 style="color: green;">Plus de diversités</h2>
+							<p>In arcu accumsan arcu adipiscing accumsan orci ac. Felis id enim aliquet. Accumsan ac integer lobortis commodo ornare aliquet accumsan erat tempus amet porttitor.</p>
+						</header>
+						<div class="contenu-carrousel" data-aos="zoom-in">
+							<div class="carrousel">
+								<div>
+									<img src="assets/images/site3.jpg" alt></div>
+								<div>
+									<img src="assets/images/site3.jpg" alt></div>
+								<div>
+									<img src="assets/images/site3.jpg" alt></div>
+								<div>
+									<img src="assets/images/site3.jpg" alt></div>
+								<div>
+									<img src="assets/images/site3.jpg" alt></div>
+								<div>
+									<img src="assets/images/site3.jpg" alt></div>
+							</div>
+						</div>
+							<div class=controle>
+								<button onclick="carrousel('-')">❮</button>
+								<button onclick="carrousel('')">❯</button>
+							</div>
+							
+					</div>
+					<hr>
+
+					<header class="special" data-aos="zoom-in">
+						<h2 style="color: green;">Profiter de belle images sur la cité du tourisme</h2>
+						<p>In arcu accumsan arcu adipiscing accumsan orci ac. Felis id enim aliquet. Accumsan ac integer lobortis commodo ornare aliquet accumsan erat tempus amet porttitor.</p>
+					</header>
+					<div class="gallery" data-aos="zoom-in">
+						<ul>
+							<li>
+								 <a href="#">
+								 <img src="assets/images/site3.jpg" alt="" />
+								 <strong>Firefox</strong>
+								 </a>
+							</li>
+							<li>
+								 <a href="#">
+								 <img src="assets/images/site1.jpg" alt="" />
+								 <strong>du text ici</strong>
+								 </a>
+							</li>
+							<li>
+								 <a href="#">
+								 <img src="assets/images/site3.jpg" alt="" />
+								 <strong>du text ici</strong>
+								 </a>
+							</li>
+							<li>
+								 <a href="#">
+								 <img src="assets/images/site1.jpg" alt="" />
+								 <strong>du text ici</strong>
+								 </a>
+							</li>
+							<li>
+								 <a href="#">
+								 <img src="assets/images/site3.jpg" alt="" />
+								 <strong>du text ici</strong>
+								 </a>
+							</li>
+							<li>
+								 <a href="#">
+								 <img src="assets/images/site1.jpg" alt="" />
+								 <strong>du text ici</strong>
+								 </a>
+							</li>
+							
+					   
+					   </ul>
+  
+					</div>
+						
+				</div>
+			</section>
+		
+		
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script src="assets/js/aos.js"></script>
+		<script >
+
+		var angle = 0;function carrousel(sign){
+
+		spinner=document.querySelector(".carrousel");
+
+		if(!sign){angle = angle + 60}
+		else{ 
+
+		angle = angle - 60
+
+		}
+
+		spinner.setAttribute("style","transform:rotateY("+ angle +"deg);")}	
+
+		</script>
+	<script>
+		AOS.init();
+	  </script>
+</body>
+</html>
